@@ -32,6 +32,11 @@ section {
 #header {
     padding: 20px 0;
 }
+.header-inner
+{
+    background:rgba(24, 6, 185, 0.8);
+    padding: 5px 0 !important;
+}
 
 .header-scrolled {
     background: rgba(24, 6, 185, 0.8);
@@ -383,7 +388,8 @@ section {
 /* end servies section  */
 /* start features section */
 .Features .section-title h2,
-.testimonials .testimonials-title h2 {
+.testimonials .testimonials-title h2,
+.portfolio-sec .section-title h2 {
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -490,3 +496,120 @@ section {
 }
 
 /* end testmonials section   */
+/* start portfolio section  */
+.portfolio-sec .section-title h2::after {
+    content: "";
+    width: 50px;
+    position: absolute;
+    height: 3px;
+    background: #5846f9;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.portfolio-sec .portfolio-filters ul {
+    display: flex;
+}
+
+.portfolio-sec .portfolio-filters li {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3 ease-in-out;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: #444444;
+    margin-left: 5px;
+    margin: 0px 0px 10px 5px;
+
+}
+
+.portfolio-sec .portfolio-filters li:hover {
+    background: #7b27d8;
+    color: #fff;
+}
+
+.portfolio-sec .portfolio-filters .filter-active {
+    background: #7b27d8;
+    color: #fff;
+}
+
+.portfolio-sec .portfolio-wrap {
+    position: relative;
+}
+
+.portfolio-sec .portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-sec .portfolio-wrap::before {
+    content: "";
+    background: rgba(88, 70, 249, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+}
+
+.portfolio-sec .portfolio-wrap .portfolio-info {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 10%;
+    left: 0;
+    right: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio-sec .portfolio-wrap .portfolio-links {
+    position: absolute;
+    opacity: 0;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio-sec .portfolio-wrap .portfolio-links a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 28px;
+    transition: all 0.3s;
+}
+
+.portfolio-sec .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.portfolio-sec .portfolio-wrap .portfolio-info p {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.portfolio-sec .portfolio-wrap:hover::before {
+
+    opacity: 1;
+}
+
+.portfolio-sec .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+    top: calc(50% - 48px);
+}
+
+.portfolio-sec .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: calc(50% - 50px);
+}
+
+
+
+
+
+/* end portfolio section  */
