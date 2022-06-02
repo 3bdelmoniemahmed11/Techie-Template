@@ -23,8 +23,27 @@ section {
     overflow: hidden;
 }
 
-.mb-25 {
-    margin-bottom: 25px;
+.section-title {
+    padding-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #5846f9;
+    bottom: 0;
+    left: calc(50% - 25px);
 }
 
 /*End General*/
@@ -32,9 +51,9 @@ section {
 #header {
     padding: 20px 0;
 }
-.header-inner
-{
-    background:rgba(24, 6, 185, 0.8);
+
+.header-inner {
+    background: rgba(24, 6, 185, 0.8);
     padding: 5px 0 !important;
 }
 
@@ -387,28 +406,6 @@ section {
 
 /* end servies section  */
 /* start features section */
-.Features .section-title h2,
-.testimonials .testimonials-title h2,
-.portfolio-sec .section-title h2 {
-    position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-}
-
-.Features .section-title h2::after,
-.testimonials .testimonials-title h2::after {
-    content: "";
-    width: 50px;
-    position: absolute;
-    height: 3px;
-    background: #5846f9;
-    bottom: 0;
-    left: calc(50% - 25px);
-
-}
-
 .Features .icon-box i {
     color: #5846f9;
     font-size: 48px;
@@ -497,16 +494,6 @@ section {
 
 /* end testmonials section   */
 /* start portfolio section  */
-.portfolio-sec .section-title h2::after {
-    content: "";
-    width: 50px;
-    position: absolute;
-    height: 3px;
-    background: #5846f9;
-    bottom: 0;
-    left: calc(50% - 25px);
-}
-
 .portfolio-sec .portfolio-filters ul {
     display: flex;
 }
@@ -608,8 +595,170 @@ section {
     bottom: calc(50% - 50px);
 }
 
-
-
-
-
 /* end portfolio section  */
+/* start pricing section  */
+.pricing .box {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    position: relative;
+}
+
+.pricing .box h3 {
+    background: #f8f8f8;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c4964;
+    padding: 20px 15px;
+    margin: -20px -20px 20px -20px;
+
+}
+
+.pricing .box h4 {
+    color: #5846f9;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.pricing .box sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+}
+
+.pricing .box h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pricing ul {
+    color: #444444;
+    font-size: 16px;
+}
+
+.pricing ul li {
+    padding-bottom: 16px;
+}
+
+.na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+    background: #f8f8f8;
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+}
+
+.pricing .btn-wrap a {
+    background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s;
+
+}
+
+.pricing .btn-buy:hover {
+    background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+}
+
+.pricing .box .featured {
+    background: #5846f9;
+    color: #fff;
+}
+
+.pricing .box .advanced {
+    position: absolute;
+    background: #5846f9;
+    transform: rotate(45deg);
+    color: #fff;
+    top: 18px;
+    right: -68px;
+    padding: 1px 0 3px 0;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* end pricing section  */
+/* start frequent asked questions  */
+.faq {
+    background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+}
+
+.faq .section-title {
+    color: #fff;
+}
+
+.faq .section-title h2::after {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.faq .faq-list {
+    padding: 0 100px;
+}
+
+.faq .faq-list li {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.faq .faq-list a {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0 30px;
+}
+
+.faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #8577fb;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+    position: absolute;
+    font-size: 30px;
+    right: 25px;
+    top: 20px;
+}
+
+.faq .faq-list a.collapsed {
+    color: #2c4964;
+}
+.faq .faq-list .icon-show {
+    display: none;
+  }
+.faq .faq-list a.collapsed .icon-close {
+    display: none;
+  }
+.faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+}
+
+.faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+.faq .faq-list li+li
+{
+    margin-top: 20px;
+} 
+/* end frequent asked questions  */
