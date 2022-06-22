@@ -762,3 +762,159 @@ section {
     margin-top: 20px;
 } 
 /* end frequent asked questions  */
+/*start contact section*/
+.contact .info-box
+{
+    background: #fff;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding:20px 0 30px 0;
+    text-align: center;
+    color:#444444;
+}
+.contact .info-box i
+{
+    font-size: 32px;
+    color: #5846f9;
+    padding: 8px;
+}
+.contact .info-box h3 
+{
+    font-size:20px;
+    color: #2c4964;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.contact .info-box p 
+{
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.contact .email-form
+{
+    background: #fff;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 30px 30px 52px 30px;
+    text-align: center;
+
+}
+.contact .email-form button[type="submit"]
+{
+    background: #5846f9;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+/*end contact section*/
+/* start footer section  */
+#footer
+{
+    color: #fff;
+    font-size: 14px;
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../Images/main-background.jpg") center center no-repeat;
+    background-size: cover;
+    padding:60px 0 0 0;
+    background-image:fi;
+}
+#footer .phone-email
+{
+    margin-top: 56px;
+}
+#footer h3 
+{
+    font-size: 28px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#footer p 
+{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+#footer h4
+{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+#footer ul li 
+{
+    padding:10px 0;
+}
+#footer ul li i
+{
+    padding-right: 2px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+}
+#footer ul li a 
+{
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.6s;
+    line-height: 1;
+}
+#footer ul li:hover a
+{
+    text-decoration: underline !important;
+    color: #fff;
+    
+}
+#footer form 
+{
+    margin-top: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+#footer input[type="submit"]
+{
+    position: absolute;
+    top:-1px;
+    right: 0;
+    border: 0;
+    background: rgba(123, 39, 216, 0.8);
+    padding:8px 20px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+#footer .copyright-wrap
+{
+    margin-top: 20px;
+    border-top: 1px solid #8577fb;
+}
+#footer .copyright-wrap .credits
+{
+    padding-top: 5px;
+    font-size: 13px;
+    color: #fff;
+}
+#footer .social-links a 
+{
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s
+}
+#footer .social-links a:hover 
+{
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+/* end footer section  */
