@@ -53,6 +53,12 @@ if(selectheader)
     onscroll(document,headerScrolled);
 }
 
+//navigation mobile 
+on("click",".mobile-nav-toggle",function(e){
+select("#navbar").classList.toggle("navbar-mobile")
+this.classList.toggle("bi-list")
+this.classList.toggle("bi-x")
+})
 let navbarlinks=select(".navbar .scrollto",true);
 const navbarlinksActive=()=>{
     let position=window.scrollY+200;
@@ -131,3 +137,13 @@ if(portfolioContainer)
   const portfolioLightbox=GLightbox({
       selector:".portfolio-lightbox"
   })
+
+window.addEventListener("load",()=>{
+    AOS.init({
+        duration:1000,
+        easing:'ease-in-out',
+        once:true,
+
+
+    })
+})

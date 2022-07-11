@@ -49,7 +49,7 @@ section {
 /*End General*/
 /*start navbar*/
 #header {
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .header-inner {
@@ -138,6 +138,15 @@ section {
     font-size: 14px !important;
     font-weight: 600;
 }
+/* start navigation mobile  */
+
+@media (max-width: 991px) {
+    #header {
+      background: linear-gradient(45deg, rgba(86, 58, 250), rgba(116, 15, 214));
+    }
+}  
+
+/* end navigation mobile */
 
 /* end navbar */
 /* start main background */
@@ -209,7 +218,21 @@ section {
         transform: translateY(-10px);
     }
 }
-
+@media (max-width: 768px)
+{
+#hero h1 {
+    font-size: 26px;
+    line-height: 36px;
+}
+#hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+#hero 
+{
+ text-align: center;
+}
+}
 /* end main backround */
 /*start about section*/
 .about h3 {
@@ -761,6 +784,14 @@ section {
 {
     margin-top: 20px;
 } 
+@media(max-width:1200px)
+{
+    .faq .faq-list {
+         padding: 0;
+    }
+    
+}
+ 
 /* end frequent asked questions  */
 /*start contact section*/
 .contact .info-box

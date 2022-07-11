@@ -19,16 +19,15 @@
   <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css" />
   <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
-
-
+  <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css"/>
+  <link rel="stylesheet" href="assets/aos/aos.css"/>
 </head>
 
 <body>
   <!-- start header  -->
   <header id="header" class="fixed-top">
     <!-- start navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <h1 class="logo"><a class="navbar-brand" href="#">Techie</a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -75,19 +74,20 @@
           </ul>
         </div>
       </div>
+
     </nav>
     <!-- end navbar  -->
   </header>
   <!-- end header  -->
   <section id="hero" class="main-bg">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row align-items-center ">
-        <div class=" col-lg-6  col-12">
+        <div class=" col-lg-6  col-12 order-2 order-lg-1">
           <h1>Bettter Digital Experience With Techie</h1>
           <h2>We are team of talented designers making websites with Bootstrap</h2>
           <a href="#" class="get-started">Get Started</a>
         </div>
-        <div class="col-lg-5 col-12">
+        <div class="col-lg-5 col-12 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
           <img class="img-fluid animated" src="Images/hero-img.png" alt="animation img">
         </div>
       </div>
@@ -97,7 +97,7 @@
   <section id="About" class="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12 order-2" data-aos="zoom-in" data-aos-delay="150">
           <h3>Voluptatem dignissimos provident quasi corporis</h3>
           <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</i></p>
@@ -119,7 +119,7 @@
           <a href="#" class="read-more">Read More</a>
         </div>
 
-        <div class=" col-lg-6 col-12">
+        <div class=" col-lg-6 col-12 order-1" data-aos="fade-right">
           <img class="img-fluid" src="Images/about/about-1.jpg" alt="" />
         </div>
       </div>
@@ -153,7 +153,7 @@
 
   <!-- services section  -->
   <section id="services" class="services section-bg">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="services-title">
         <h3>Services</h3>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -162,7 +162,7 @@
       </div>
 
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 ">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box iconbox-blue">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +177,7 @@
             <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 ">
+        <div class="col-lg-4 col-md-6 " data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box iconbox-orange">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +192,7 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 ">
+        <div class="col-lg-4 col-md-6 " data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box iconbox-pink">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +209,7 @@
         </div>
 
 
-        <div class="col col-lg-4 col-md-6  ">
+        <div class="col col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box iconbox-yellow">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +224,7 @@
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
           </div>
         </div>
-        <div class=" col-lg-4 col-md-6  ">
+        <div class=" col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box iconbox-red">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +239,7 @@
             <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 ">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box iconbox-tea">
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +259,7 @@
   </section>
   <section class="Features">
 
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="section-title text-center">
         <h2>Features</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -268,45 +268,45 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-6 ">
-          <div class="icon-box mt-5">
+        <div class="col-lg-6 order-2">
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
 
             <i class="bx bx-receipt"></i>
             <h4>Est labore ad</h4>
 
             <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip </p>
           </div>
-          <div class="icon-box mt-5">
+          <div class="icon-box mt-5"  data-aos="fade-up" data-aos-delay="200">
             <i class="bx bx-cube-alt"></i>
             <h4>Harum esse qui</h4>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
           </div>
-          <div class="icon-box mt-5">
+          <div class="icon-box mt-5"  data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-images"></i>
             <h4>Aut occaecati</h4>
             <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
           </div>
-          <div class="icon-box mt-5">
+          <div class="icon-box mt-5"  data-aos="fade-up" data-aos-delay="400">
             <i class="bx bx-shield"></i>
             <h4> Beatae veritatis</h4>
             <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-1"  data-aos="zoom-in" data-aos-delay="150">
           <img class="img-fluid" src="Images/features.svg" alt="features-background">
         </div>
       </div>
     </div>
   </section>
   <section class="testimonials section-bg">
-    <div class="container">
+    <div class="container"  data-aos="fade-up">
       <div class="testimonials-title text-center">
         <h2>testimonials</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
           in iste officiis commodi quidem hic quas.</p>
       </div>
-      <div class="swiper">
+      <div class="swiper"  data-aos="fade-up" data-aos-delay="100">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="testimonial-item">
@@ -391,7 +391,7 @@
   </section>
   <!-- start Portfolio section  -->
   <section id="portfolio" class="portfolio-sec">
-    <div class="container ">
+    <div class="container"  data-aos="fade-up">
       <div class="section-title text-center">
         <h2>portfolio</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -545,7 +545,7 @@
   <!-- end Portfolio section  -->
   <!-- start section pricing  -->
   <section class="pricing section-bg">
-    <div class="container">
+    <div class="container"  data-aos="fade-up">
       <div class="section-title text-center ">
         <h2>pricing</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -554,7 +554,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6"  data-aos="fade-up" data-aos-delay="100">
           <div class="box">
             <h3>Free</h3>
             <h4>
@@ -573,7 +573,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0"  data-aos="fade-up" data-aos-delay="200">
           <div class="box">
             <h3 class="featured">Bussiness</h3>
             <h4>
@@ -592,7 +592,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0"  data-aos="fade-up" data-aos-delay="300">
           <div class="box">
             <h3>Developer</h3>
             <h4>
@@ -610,7 +610,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0"  data-aos="fade-up" data-aos-delay="400">
           <div class="box">
             <div class="advanced">Advanced</div>
             <h3>Ultimate</h3>
@@ -635,7 +635,7 @@
   <!-- end section pricing -->
   <!-- start faq section  -->
   <section class="faq">
-    <div class="container">
+    <div class="container"  data-aos="fade-up">
       <div class="section-title text-center">
         <h2>Frequently Asked Questions</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -644,7 +644,7 @@
       </div>
       <div class="faq-list">
         <ul class="list-unstyled">
-          <li>
+          <li  data-aos="fade-up" data-aos-delay="100">
             <i class="bx bx-help-circle icon-help"></i>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">
               Non consectetur a erat nam at lectus urna duis?
@@ -659,7 +659,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li  data-aos="fade-up" data-aos-delay="200">
             <i class="bx bx-help-circle icon-help"></i>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-2">
               Feugiat scelerisque varius morbi enim nunc?
@@ -675,7 +675,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li  data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-help-circle icon-help"></i>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-3">
               Dolor sit amet consectetur adipiscing elit?
@@ -691,7 +691,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li  data-aos="fade-up" data-aos-delay="400">
             <i class="bx bx-help-circle icon-help"></i>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-4">
               Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
@@ -707,7 +707,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li  data-aos="fade-up" data-aos-delay="500">
             <i class="bx bx-help-circle icon-help"></i>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-5">
               Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
@@ -731,7 +731,7 @@
   <!-- end faq section  -->
   <!-- start contact section  -->
   <section id="contact" class="contact section-bg">
-    <div class="container">
+    <div class="container"  data-aos="fade-up">
       <div class="section-title text-center">
         <h2>contact</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -913,6 +913,8 @@
   <script src="assets/glightbox/js/glightbox.min.js"></script>
   <!-- main js files  -->
   <script src="js/main.js"></script>
+  <!-- aos files  -->
+  <script src="assets/aos/aos.js"></script>
 
 
 </body>
